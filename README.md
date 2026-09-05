@@ -8,7 +8,7 @@ analyses, figures, and tables reported in the manuscript.
 The dataset is derived from the Demographic and Health Surveys (DHS)
 Program (https://dhsprogram.com/data/), pooled across 27 Sub-Saharan
 African countries. Access requires a data use agreement with the DHS
-Program. Data were accessed on: **[INSERT EXACT ACCESS DATE]**.
+Program. Data were accessed on 19 Jan 2025.
 Due to DHS data-sharing restrictions, the raw microdata cannot be
 redistributed in this repository; researchers must request access
 directly from https://dhsprogram.com/data/new-user-registration.aspx.
