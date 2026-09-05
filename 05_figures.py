@@ -1,10 +1,10 @@
 """
 =============================================================================
-SCRIPT 5 of 6: ALL FIGURES FOR MANUSCRIPT
+ALL FIGURES FOR MANUSCRIPT
 =============================================================================
 Study: Predicting Under-Five Mortality Using Tree-Based Ensemble Learning
 
-Generates every figure reported in the manuscript:
+Generates every figure some were reported in the manuscript (Important ones) while others were ommitted in the manuscript:
     Figure 1 - Variable selection (RF importance / RFE / Boruta panels)
     Figure 2 - Cramer's V correlation heatmap
     Figure 3 - SMOTE before/after class distribution bar chart
