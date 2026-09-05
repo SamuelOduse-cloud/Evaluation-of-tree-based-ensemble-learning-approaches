@@ -1,6 +1,6 @@
 """
 =============================================================================
-SCRIPT 2 of 4: SMOTE BALANCING AND DATASET PARTITIONING
+SMOTE BALANCING AND DATASET PARTITIONING
 =============================================================================
 Study: Predicting Under-Five Mortality Using Tree-Based Ensemble Learning
 
