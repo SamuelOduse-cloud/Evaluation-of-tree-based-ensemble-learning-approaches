@@ -1,0 +1,15 @@
+# Reproducibility environment for:
+# "Predicting Under-Five Mortality Using Tree-Based Ensemble Learning"
+# Generated: pinned to exact versions used in reported analyses
+python==3.12.3
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.4.1
+lightgbm==4.7.0
+imbalanced-learn==0.14.2
+shap==0.52.0
+matplotlib==3.10.8
+seaborn==0.13.2
+openpyxl>=3.1.0
