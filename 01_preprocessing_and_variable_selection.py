@@ -1,6 +1,6 @@
 """
 =============================================================================
-SCRIPT 1 of 4: DATA PREPROCESSING AND VARIABLE SELECTION
+DATA PREPROCESSING AND VARIABLE SELECTION
 =============================================================================
 Study: Predicting Under-Five Mortality Using Tree-Based Ensemble Learning
 Data source: Demographic and Health Surveys (DHS) Program, pooled dataset
