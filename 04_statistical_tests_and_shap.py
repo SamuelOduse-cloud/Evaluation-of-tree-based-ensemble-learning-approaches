@@ -1,6 +1,6 @@
 """
 =============================================================================
-SCRIPT 4 of 4: STATISTICAL COMPARISON (FRIEDMAN + WILCOXON) AND SHAP
+STATISTICAL COMPARISON (FRIEDMAN + WILCOXON) AND SHAP
 =============================================================================
 Study: Predicting Under-Five Mortality Using Tree-Based Ensemble Learning
 
@@ -28,7 +28,7 @@ np.random.seed(RANDOM_STATE)
 ALGORITHMS = ["Random Forest", "XGBoost", "GBM", "LightGBM", "Extra Trees"]
 
 # -----------------------------------------------------------------------
-# PART A: FRIEDMAN TEST + POST-HOC WILCOXON (uses Script 3 output)
+# PART A: FRIEDMAN TEST + POST-HOC WILCOXON 
 # -----------------------------------------------------------------------
 cv_auc = pd.read_csv("cv_fold_auc_matrix.csv")
 cv_matrix = cv_auc[ALGORITHMS].values     # shape: (5 folds, 5 algorithms)
@@ -55,13 +55,13 @@ pd.DataFrame({"chi_squared": [chi2_stat], "p_value": [p_value]}).to_csv(
 print("Saved: posthoc_wilcoxon_pvalues.csv, friedman_test_result.csv")
 
 # -----------------------------------------------------------------------
-# PART B: SHAP EXPLAINABILITY ANALYSIS (best model: LightGBM)
+# PART B: SHAP EXPLAINABILITY ANALYSIS
 # -----------------------------------------------------------------------
 X_train = np.load("X_train.npy"); y_train = np.load("y_train.npy")
 X_test  = np.load("X_test.npy")
 selected_vars = pd.read_csv("selected_variables.csv", header=None)[0].tolist()
 
-# Refit LightGBM with its tuned hyperparameters (from Script 3 grid search)
+# Refit LightGBM with its tuned hyperparameters
 lgb_model = LGBMClassifier(
     n_estimators=200, num_leaves=31, learning_rate=0.1,
     random_state=RANDOM_STATE, class_weight="balanced", verbose=-1, n_jobs=-1
