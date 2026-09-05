@@ -1,6 +1,6 @@
 """
 =============================================================================
-SCRIPT 6 of 7: FULL PREDICTOR SET vs. CONSENSUS-SELECTED SET COMPARISON
+FULL PREDICTOR SET vs. CONSENSUS-SELECTED SET COMPARISON
 =============================================================================
 Study: Predicting Under-Five Mortality Using Tree-Based Ensemble Learning
 
@@ -111,7 +111,7 @@ for name, (estimator, grid) in PARAM_GRIDS.items():
 full_df = pd.DataFrame(full_results)
 
 # -----------------------------------------------------------------------
-# MERGE WITH CONSENSUS-SELECTED (8-VARIABLE) RESULTS FROM SCRIPT 3
+# MERGE WITH CONSENSUS-SELECTED (8-VARIABLE) 
 # -----------------------------------------------------------------------
 selected_metrics = pd.read_csv("model_evaluation_metrics.csv")
 selected_test = selected_metrics[selected_metrics["Set"] == "Test"][
