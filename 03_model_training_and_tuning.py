@@ -1,6 +1,6 @@
 """
 =============================================================================
-SCRIPT 3 of 4: MODEL TRAINING, HYPERPARAMETER TUNING, AND EVALUATION
+MODEL TRAINING, HYPERPARAMETER TUNING, AND EVALUATION
 =============================================================================
 Study: Predicting Under-Five Mortality Using Tree-Based Ensemble Learning
 
@@ -32,14 +32,14 @@ RANDOM_STATE = 2025
 np.random.seed(RANDOM_STATE)
 
 # -----------------------------------------------------------------------
-# LOAD PARTITIONED DATA (from Script 2 output)
+# LOAD PARTITIONED DATA 
 # -----------------------------------------------------------------------
 X_train = np.load("X_train.npy"); y_train = np.load("y_train.npy")
 X_val   = np.load("X_val.npy");   y_val   = np.load("y_val.npy")
 X_test  = np.load("X_test.npy");  y_test  = np.load("y_test.npy")
 
 # -----------------------------------------------------------------------
-# HYPERPARAMETER GRIDS (exactly as reported in manuscript Table 3)
+# HYPERPARAMETER GRIDS 
 # -----------------------------------------------------------------------
 PARAM_GRIDS = {
     "Random Forest": (
@@ -97,7 +97,7 @@ for name, (estimator, grid) in PARAM_GRIDS.items():
     best_model = gs.best_estimator_
     print(f"Best parameters: {gs.best_params_}")
 
-    # 5-fold CV AUC (for the Friedman statistical test — see Script 4)
+    # 5-fold CV AUC (for the Friedman statistical test)
     fold_aucs = []
     for train_idx, val_idx in cv5.split(X_train, y_train):
         best_model.fit(X_train[train_idx], y_train[train_idx])
@@ -114,7 +114,7 @@ for name, (estimator, grid) in PARAM_GRIDS.items():
         prob = best_model.predict_proba(X)[:, 1]
         all_results.append(compute_metrics(y, prob, split_name, name))
 
-    # Save test-set predicted probabilities (for ROC curves and SHAP, Script 4)
+    # Save test-set predicted probabilities (for ROC curves and SHAP)
     np.save(f"test_probs_{name.replace(' ', '_')}.npy",
             best_model.predict_proba(X_test)[:, 1])
 
