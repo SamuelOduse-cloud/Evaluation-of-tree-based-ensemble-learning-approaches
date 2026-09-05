@@ -26,7 +26,7 @@ RANDOM_STATE = 2025
 np.random.seed(RANDOM_STATE)
 
 # -----------------------------------------------------------------------
-# STEP 1: LOAD DATA AND SELECTED VARIABLES (from Script 1 output)
+# STEP 1: LOAD DATA AND SELECTED VARIABLES 
 # -----------------------------------------------------------------------
 df = pd.read_excel("Mortality_data.xlsx")
 selected_vars = pd.read_csv("selected_variables.csv", header=None)[0].tolist()
