@@ -68,5 +68,3 @@ saved with matching filenames (e.g., `Table3_Model_Evaluation_Metrics.csv`).
 If you use this code, please cite the associated manuscript:
 [Author(s), Year, Journal, DOI — to be finalised upon publication]
 
-### License
-[Insert chosen license, e.g., MIT / CC-BY 4.0]
