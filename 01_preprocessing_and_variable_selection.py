@@ -33,8 +33,6 @@ np.random.seed(RANDOM_STATE)
 # STEP 1: LOAD DATA
 # -----------------------------------------------------------------------
 # Replace with the path to the DHS extract used in this study.
-# Data access: [INSERT DATE OF DHS DATA REQUEST/DOWNLOAD], obtained under
-# DHS Program data use agreement from https://dhsprogram.com/data/
 DATA_PATH = "Mortality_data.xlsx"
 df = pd.read_excel(DATA_PATH)
 print(f"Loaded dataset: {df.shape[0]} rows, {df.shape[1]} columns")
