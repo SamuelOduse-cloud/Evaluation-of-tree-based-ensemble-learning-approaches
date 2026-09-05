@@ -1,6 +1,6 @@
 """
 =============================================================================
-SCRIPT 7 of 7: COMPILE ALL MANUSCRIPT TABLES
+COMPILE ALL MANUSCRIPT TABLES
 =============================================================================
 Study: Predicting Under-Five Mortality Using Tree-Based Ensemble Learning
 
